@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Monte seu PC do Jeito que Você Quiser!</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <h1>Monte seu PC do Jeito que Você Quiser!</h1>
+
+  <div class="container">
+    <label for="cpu">Escolha o Processador:</label>
+    <select id="cpu">
+      <option value="">-- Selecione --</option>
+      <option value="Intel i5|1200">Intel i5 - R$1200</option>
+      <option value="Intel i7|1800">Intel i7 - R$1800</option>
+      <option value="Ryzen 5|1100">Ryzen 5 - R$1100</option>
+      <option value="Ryzen 7|1700">Ryzen 7 - R$1700</option>
+    </select>
+
+    <label for="gpu">Escolha a Placa de Vídeo:</label>
+    <select id="gpu">
+      <option value="">-- Selecione --</option>
+      <option value="RTX 3060|2000">RTX 3060 - R$2000</option>
+      <option value="RTX 4070|3500">RTX 4070 - R$3500</option>
+      <option value="RX 6700 XT|2500">RX 6700 XT - R$2500</option>
+    </select>
+
+    <label for="ram">Quantidade de Memória RAM:</label>
+    <select id="ram">
+      <option value="">-- Selecione --</option>
+      <option value="16GB|300">16GB - R$300</option>
+      <option value="32GB|550">32GB - R$550</option>
+    </select>
+
+    <label for="storage">Tipo de Armazenamento:</label>
+    <select id="storage">
+      <option value="">-- Selecione --</option>
+      <option value="SSD 512GB|350">SSD 512GB - R$350</option>
+      <option value="SSD 1TB|600">SSD 1TB - R$600</option>
+    </select>
+
+    <label for="psu">Fonte de Alimentação:</label>
+    <select id="psu">
+      <option value="">-- Selecione --</option>
+      <option value="200W|150">200W - R$150</option>
+      <option value="300W|200">300W - R$200</option>
+      <option value="500W|300">500W - R$300</option>
+      <option value="750W|450">750W - R$450</option>
+    </select>
+
+    <button onclick="montarPC()">Finalizar Montagem</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
